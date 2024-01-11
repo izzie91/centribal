@@ -8,12 +8,12 @@ const LIMIT = 5;
 const apiAdapter = new ProductApiAdapter();
 const productService = new ProductService(apiAdapter);
 
-const useProductTable = () => {
+const useProductTable = ({ langLabels }) => {
   const [products, setProducts] = useState(null);
   const [page, setPage] = useState(1);
 
   const getProducts = useCallback(async (offset, limit) => {
-    await productService.fetchProductsPaginated(offset, limit);
+    await productService.fetchProductsPaginated(offset, limit, langLabels.ErrorMessge);
     setProducts(productService.getProducts());
   }, []);
 

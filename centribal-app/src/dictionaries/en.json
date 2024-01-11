@@ -16,7 +16,9 @@
       "caption": "A list of all products",
       "newProductButton": "Create product",
       "nextButton": "Next",
-      "backButton": "Back"
+      "backButton": "Back",
+      "emptyListMessage": "There are no more products registered",
+      "errorMessage": "Unexpected Error"
     }
   },
   "ordersPage": {
@@ -29,7 +31,9 @@
       "caption": "A list of all orders",
       "newOrderButton": "Create order",
       "nextButton": "Next",
-      "backButton": "Back"
+      "backButton": "Back",
+      "emptyListMessage": "There are no more orders registered",
+      "errorMessage": "Unexpected Error"
     }
   },
   "productsDetailPage": {
@@ -42,7 +46,9 @@
       "mainLabel": "Products Details",
       "caption": "You can modified the details",
       "saveButton": "Save",
-      "backButton": "Back"
+      "backButton": "Back",
+      "updatedMessage": "Product was updated",
+      "errorMessage": "Unexpected Error"
     }
   },
   "ordersDetailPage": {
@@ -55,7 +61,9 @@
       "saveButton": "Save",
       "backButton": "Back",
       "listItemsLabel": "List of products",
-      "itemReferenceCodeLabel": "Reference"
+      "itemReferenceCodeLabel": "Reference",
+      "updatedMessage": "Order was updated",
+      "errorMessage": "Unexpected Error"
     }
   },
   "newProductPage": {
@@ -67,7 +75,9 @@
       "taxPriceLabel": "Tax Price",
       "mainLabel": "New Product",
       "createButton": "Create",
-      "backButton": "Back"
+      "backButton": "Back",
+      "createdMessage": "Product was created",
+      "errorMessage": "Unexpected Error"
     }
   },
   "newOrderPage": {
@@ -79,7 +89,9 @@
       "saveButton": "Create",
       "backButton": "Back",
       "listItemsLabel": "List of products",
-      "itemReferenceCodeLabel": "Reference"
+      "itemReferenceCodeLabel": "Reference",
+      "createdMessage": "Order was created",
+      "errorMessage": "Unexpected Error"
     }
   }
 }

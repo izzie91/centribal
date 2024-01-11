@@ -8,7 +8,7 @@ import ProductService from "@/core/ProductService";
 const apiAdapter = new ProductApiAdapter();
 const productService = new ProductService(apiAdapter);
 
-const useEditProduct = () => {
+const useEditProduct = ({ langLabels }) => {
   const { id: productId } = useParams();
   const {
     handleSubmit,
@@ -27,7 +27,7 @@ const useEditProduct = () => {
   });
 
   const getProductById = useCallback(async () => {
-    await productService.fetchProductById(productId);
+    await productService.fetchProductById(productId, langLabels.ErrorMessge);
     setValue("referenceCode", productService.getProduct().referenceCode);
     setValue("name", productService.getProduct().name);
     setValue("description", productService.getProduct().description);
@@ -37,7 +37,7 @@ const useEditProduct = () => {
 
   const editProductById = useCallback(
     async (data) => {
-      await productService.updateProduct(productId, data);
+      await productService.updateProduct(productId, data, langLabels.updatedMessage, langLabels.ErrorMessge);
       setValue("referenceCode", productService.getProduct().referenceCode);
       setValue("name", productService.getProduct().name);
       setValue("description", productService.getProduct().description);

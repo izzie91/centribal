@@ -16,7 +16,9 @@
       "caption": "Listado de productos",
       "newProductButton": "Crear producto",
       "nextButton": "Siguiente",
-      "backButton": "Previo"
+      "backButton": "Previo",
+      "emptyListMessage": "No se registran más productos",
+      "errorMessage": "Error"
     }
   },
   "ordersPage": {
@@ -29,7 +31,9 @@
       "caption": "Lista de todos los pedidos",
       "newOrderButton": "Crear pedido",
       "nextButton": "Siguiente",
-      "backButton": "Atrás"
+      "backButton": "Atrás",
+      "emptyListMessage": "No se registran más pedidos",
+      "errorMessage": "Error"
     }
   },
   "productsDetailPage": {
@@ -42,7 +46,9 @@
       "mainLabel": "Detalles del producto",
       "caption": "Puedes modificar los detalles del producto",
       "saveButton": "Guardar",
-      "backButton": "Atrás"
+      "backButton": "Atrás",
+      "updatedMessage": "El producto fue modificado",
+      "errorMessage": "Error"
     }
   },
   "ordersDetailPage": {
@@ -55,7 +61,9 @@
       "saveButton": "Salvar",
       "backButton": "Atrás",
       "listItemsLabel": "Lista de productos",
-      "itemReferenceCodeLabel": "Referencia de Producto"
+      "itemReferenceCodeLabel": "Referencia de Producto",
+      "updatedMessage": "El pedido fue modificado",
+      "errorMessage": " Error"
     }
   },
   "newProductPage": {
@@ -67,7 +75,9 @@
       "taxPriceLabel": "Precio con Impuesto",
       "mainLabel": "Crear Producto",
       "createButton": "Crear",
-      "backButton": "Atrás"
+      "backButton": "Atrás",
+      "createdMessage": "Producto creado",
+      "errorMessage": " Error"
     }
   },
   "newOrderPage": {
@@ -79,7 +89,9 @@
       "saveButton": "Crear",
       "backButton": "Atrás",
       "listItemsLabel": "Lista de productos",
-      "itemReferenceCodeLabel": "Referencia de Producto"
+      "itemReferenceCodeLabel": "Referencia de Producto",
+      "createdMessage": "Pedido creado",
+      "errorMessage": " Error"
     }
   }
 }

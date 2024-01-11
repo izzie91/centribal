@@ -1,10 +1,10 @@
 "use client";
-import useProductTable from "@/hooks/useProductTable";
+import useProductTable from "@/hooks/products/useProductTable";
 import { useParams } from "next/navigation";
 
 export default function ProductTable({ langLabels }) {
   const { lang } = useParams();
-  const { products, page, onIncreasePageHandler, onDecreasePageHandler } = useProductTable();
+  const { products, page, onIncreasePageHandler, onDecreasePageHandler } = useProductTable({ langLabels });
 
   return (
     <div className="w-full rounded-md bg-white p-4 border-[1px]">
@@ -64,6 +64,9 @@ export default function ProductTable({ langLabels }) {
                   ))}
                 </tbody>
               </table>
+              {products?.length == 0 && (
+                <div className="w-full bg-gray-100 p-2 my-2 text-sm">{langLabels.emptyListMessage}</div>
+              )}
               <h6 className="text-sm">Page: {page}</h6>
               <div className="my-4 flex flex-1 justify-between sm:justify-end">
                 <button

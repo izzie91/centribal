@@ -9,7 +9,7 @@ import ProductService from "@/core/ProductService";
 const apiAdapter = new ProductApiAdapter();
 const productService = new ProductService(apiAdapter);
 
-const useNewProduct = ({ lang }) => {
+const useNewProduct = ({ lang, langLabels }) => {
   const router = useRouter();
   const {
     handleSubmit,
@@ -29,7 +29,7 @@ const useNewProduct = ({ lang }) => {
 
   const newProduct = useCallback(
     async (data) => {
-      await productService.createProduct(data);
+      await productService.createProduct(data, langLabels.createdMessage, langLabels.ErrorMessge);
       router.push("/" + lang + "/products");
     },
     [defaultValues]

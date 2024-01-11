@@ -2,7 +2,7 @@ import { ordersClient } from "@/clients";
 import { toast } from "react-toastify";
 
 class OrderApiAdapter {
-  async fetchOrders(offset, limit) {
+  async fetchOrdersPaginated(offset, limit, errorMessage) {
     try {
       const res = await ordersClient().getOrdersPaginated(offset, limit);
       if (res.status == 200) {
@@ -11,12 +11,12 @@ class OrderApiAdapter {
       }
     } catch (error) {
       //console.error("Error fetching products from API", error);
-      toast.error("Error fetching orders from API");
+      toast.error(errorMessage);
       return [];
     }
   }
 
-  async fetchOrderById(orderId) {
+  async fetchOrderById(orderId, errorMessage) {
     try {
       const res = await ordersClient().getOrderById(orderId);
       if (res.status == 200) {
@@ -24,36 +24,36 @@ class OrderApiAdapter {
         return resData;
       }
     } catch (error) {
-      toast.error("Error fetching orders from API");
+      toast.error(errorMessage);
       return [];
     }
   }
 
-  async createOrder(data) {
+  async createOrder(data, createdMessage, errorMessage) {
     try {
       const res = await ordersClient().newOrder(data);
       if (res.status == 201) {
         const resData = await res.json();
-        toast.info("Order was created");
+        toast.info(createdMessage);
         return resData;
       }
     } catch (error) {
-      toast.error("Error creating product");
+      toast.error(errorMessage);
       return [];
     }
   }
 
-  async updateOrder(orderId, data) {
+  async updateOrder(orderId, data, updatedMessage, errorMessage) {
     try {
       const res = await ordersClient().editOrderById(orderId, data);
 
       if (res.status == 200) {
         const resData = await res.json();
-        toast.info("Order was saved");
+        toast.info(updatedMessage);
         return resData;
       }
     } catch (error) {
-      toast.error("Error fetching products from API");
+      toast.error(errorMessage);
       return [];
     }
   }

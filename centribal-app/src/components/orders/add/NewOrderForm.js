@@ -1,12 +1,12 @@
 "use client";
 import { useParams } from "next/navigation";
 import { Controller } from "react-hook-form";
-import useNewOrder from "@/hooks/useNewOrder";
+import useNewOrder from "@/hooks/orders/useNewOrder";
 import ProductItem from "./ProductItem";
 
 export default function NewOrderForm({ langLabels }) {
   const { lang } = useParams();
-  const { handleSubmit, onSubmit, control, products, addProduct, removeProduct } = useNewOrder({ lang });
+  const { handleSubmit, onSubmit, control, products, addProduct, removeProduct } = useNewOrder({ lang, langLabels });
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-full rounded-md bg-white p-8 border-[1px]">

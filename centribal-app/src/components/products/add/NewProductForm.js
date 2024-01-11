@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
 import { Controller } from "react-hook-form";
-import useNewProduct from "@/hooks/useNewProduct";
+import useNewProduct from "@/hooks/products/useNewProduct";
 
 const calculateTaxes = (price) => {
   if (price == "") {
@@ -13,7 +13,7 @@ const calculateTaxes = (price) => {
 
 export default function NewProductForm({ langLabels }) {
   const { lang } = useParams();
-  const { handleSubmit, onSubmit, control, setValue } = useNewProduct({ lang });
+  const { handleSubmit, onSubmit, control, setValue } = useNewProduct({ lang, langLabels });
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-full rounded-md bg-white p-8 border-[1px]">

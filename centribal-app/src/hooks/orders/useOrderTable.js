@@ -9,12 +9,12 @@ const LIMIT = 5;
 const apiAdapter = new OrderApiAdapter();
 const orderService = new OrderService(apiAdapter);
 
-const useOrderTable = () => {
+const useOrderTable = ({ langLabels }) => {
   const [orders, setOrders] = useState(null);
   const [page, setPage] = useState(1);
 
   const getOrders = useCallback(async (offset, limit) => {
-    await orderService.fetchOrders(offset, limit);
+    await orderService.fetchOrdersPaginated(offset, limit, langLabels.ErrorMessge);
     setOrders(orderService.getOrders());
   }, []);
 

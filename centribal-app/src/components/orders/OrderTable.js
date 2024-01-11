@@ -1,10 +1,10 @@
 "use client";
 import { useParams } from "next/navigation";
-import useOrderTable from "@/hooks/useOrderTable";
+import useOrderTable from "@/hooks/orders/useOrderTable";
 
 export default function OrderTable({ langLabels }) {
   const { lang } = useParams();
-  const { orders, page, onIncreasePageHandler, onDecreasePageHandler } = useOrderTable();
+  const { orders, page, onIncreasePageHandler, onDecreasePageHandler } = useOrderTable({ langLabels });
 
   return (
     <div className="w-full rounded-md bg-white p-4 border-[1px]">
@@ -61,6 +61,9 @@ export default function OrderTable({ langLabels }) {
                   ))}
                 </tbody>
               </table>
+              {orders?.length == 0 && (
+                <div className="w-full bg-gray-100 p-2 my-2 text-sm">{langLabels.emptyListMessage}</div>
+              )}
               <h6 className="text-sm">Page: {page}</h6>
               <div className="my-4 flex flex-1 justify-between sm:justify-end">
                 <button

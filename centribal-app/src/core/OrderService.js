@@ -7,20 +7,20 @@ class OrderService {
     this.order = null;
   }
 
-  async fetchOrders(offset, limit) {
-    this.orders = await this.apiAdapter.fetchOrders(offset, limit);
+  async fetchOrdersPaginated(offset, limit, errorMessage) {
+    this.orders = await this.apiAdapter.fetchOrdersPaginated(offset, limit, errorMessage);
   }
 
-  async fetchOrderById(orderId) {
-    this.order = await this.apiAdapter.fetchOrderById(orderId);
+  async fetchOrderById(orderId, errorMessage) {
+    this.order = await this.apiAdapter.fetchOrderById(orderId, errorMessage);
   }
 
-  async createOrder(data) {
-    await this.apiAdapter.createOrder(data);
+  async createOrder(data, createdMessage, errorMessage) {
+    await this.apiAdapter.createOrder(data, createdMessage, errorMessage);
   }
 
-  async updateOrder(orderId, data) {
-    this.order = await this.apiAdapter.updateOrder(orderId, data);
+  async updateOrder(orderId, data, updatedMessage, errorMessage) {
+    this.order = await this.apiAdapter.updateOrder(orderId, data, updatedMessage, errorMessage);
   }
 
   getOrders() {

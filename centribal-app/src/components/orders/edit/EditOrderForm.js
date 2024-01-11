@@ -1,12 +1,12 @@
 "use client";
 import { useParams } from "next/navigation";
 import { Controller } from "react-hook-form";
-import useEditOrder from "@/hooks/useEditOrder";
+import useEditOrder from "@/hooks/orders/useEditOrder";
 import OrderItem from "./OrderItem";
 
 export default function EditOrderForm({ langLabels }) {
   const { lang } = useParams();
-  const { handleSubmit, onSubmit, control, order, addProduct, removeProduct } = useEditOrder();
+  const { handleSubmit, onSubmit, control, order, addProduct, removeProduct } = useEditOrder({ langLabels });
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-full rounded-md bg-white p-8 border-[1px]">
