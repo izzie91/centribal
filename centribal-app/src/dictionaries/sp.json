@@ -1,0 +1,85 @@
+{
+  "navigation": {
+    "productsLink": "Productos",
+    "ordersLink": "Pedidos"
+  },
+  "homepage": {
+    "welcome": "Bienvenido a la aplicación de Centribal!"
+  },
+  "productsPage": {
+    "table": {
+      "referenceHeader": "Referencia",
+      "nameHeader": "Nombre",
+      "priceHeader": "Precio",
+      "detailsLink": "Detalles",
+      "mainLabel": "Productos",
+      "caption": "Listado de productos",
+      "newProductButton": "Crear producto",
+      "nextButton": "Siguiente",
+      "backButton": "Previo"
+    }
+  },
+  "ordersPage": {
+    "table": {
+      "referenceHeader": "Referencia",
+      "totalHeader": "Total",
+      "taxTotalHeader": "Total con impuesto",
+      "detailsLink": "Detalles",
+      "mainLabel": "Pedidos",
+      "caption": "Lista de todos los pedidos",
+      "newOrderButton": "Crear pedido",
+      "nextButton": "Siguiente",
+      "backButton": "Atrás"
+    }
+  },
+  "productsDetailPage": {
+    "form": {
+      "referenceLabel": "Referencia",
+      "nameLabel": "Nombre",
+      "descriptionLabel": "Descripción",
+      "priceLabel": "Precio",
+      "taxPriceLabel": "Precio con Impuesto",
+      "mainLabel": "Detalles del producto",
+      "caption": "Puedes modificar los detalles del producto",
+      "saveButton": "Guardar",
+      "backButton": "Atrás"
+    }
+  },
+  "ordersDetailPage": {
+    "form": {
+      "identifierLabel": "Identificador",
+      "totalLabel": "Total",
+      "taxTotalLabel": "Total con Impuestos",
+      "mainLabel": "Detalles del pedido",
+      "caption": "Puedes modificar los detalles del pedido",
+      "saveButton": "Salvar",
+      "backButton": "Atrás",
+      "listItemsLabel": "Lista de productos",
+      "itemReferenceCodeLabel": "Referencia de Producto"
+    }
+  },
+  "newProductPage": {
+    "form": {
+      "referenceLabel": "Referencia",
+      "nameLabel": "Nombre",
+      "descriptionLabel": "Descripción",
+      "priceLabel": "Precio",
+      "taxPriceLabel": "Precio con Impuesto",
+      "mainLabel": "Crear Producto",
+      "createButton": "Crear",
+      "backButton": "Atrás"
+    }
+  },
+  "newOrderPage": {
+    "form": {
+      "identifierLabel": "Identificador",
+      "totalLabel": "Total",
+      "taxTotalLabel": "Total con Impuestos",
+      "mainLabel": "Nuevo Pedido",
+      "saveButton": "Crear",
+      "backButton": "Atrás",
+      "listItemsLabel": "Lista de productos",
+      "itemReferenceCodeLabel": "Referencia de Producto"
+    }
+  }
+}

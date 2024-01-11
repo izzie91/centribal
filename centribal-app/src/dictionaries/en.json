@@ -1,0 +1,85 @@
+{
+  "navigation": {
+    "productsLink": "Products",
+    "ordersLink": "Orders"
+  },
+  "homepage": {
+    "welcome": "Welcome to Centribal Application!"
+  },
+  "productsPage": {
+    "table": {
+      "referenceHeader": "Reference",
+      "nameHeader": "Name",
+      "priceHeader": "Price",
+      "detailsLink": "Details",
+      "mainLabel": "Products",
+      "caption": "A list of all products",
+      "newProductButton": "Create product",
+      "nextButton": "Next",
+      "backButton": "Back"
+    }
+  },
+  "ordersPage": {
+    "table": {
+      "referenceHeader": "Reference",
+      "totalHeader": "Total",
+      "taxTotalHeader": "Tax Total",
+      "detailsLink": "Details",
+      "mainLabel": "Orders",
+      "caption": "A list of all orders",
+      "newOrderButton": "Create order",
+      "nextButton": "Next",
+      "backButton": "Back"
+    }
+  },
+  "productsDetailPage": {
+    "form": {
+      "referenceLabel": "Reference",
+      "nameLabel": "Name",
+      "descriptionLabel": "Description",
+      "priceLabel": "Price",
+      "taxPriceLabel": "Tax Price",
+      "mainLabel": "Products Details",
+      "caption": "You can modified the details",
+      "saveButton": "Save",
+      "backButton": "Back"
+    }
+  },
+  "ordersDetailPage": {
+    "form": {
+      "identifierLabel": "Identifier",
+      "totalLabel": "Total",
+      "taxTotalLabel": "Tax Total",
+      "mainLabel": "Order Details",
+      "caption": "You can modified the details",
+      "saveButton": "Save",
+      "backButton": "Back",
+      "listItemsLabel": "List of products",
+      "itemReferenceCodeLabel": "Reference"
+    }
+  },
+  "newProductPage": {
+    "form": {
+      "referenceLabel": "Reference",
+      "nameLabel": "Name",
+      "descriptionLabel": "Description",
+      "priceLabel": "Price",
+      "taxPriceLabel": "Tax Price",
+      "mainLabel": "New Product",
+      "createButton": "Create",
+      "backButton": "Back"
+    }
+  },
+  "newOrderPage": {
+    "form": {
+      "identifierLabel": "Reference",
+      "totalLabel": "Total",
+      "taxTotalLabel": "Tax Total",
+      "mainLabel": "New Order",
+      "saveButton": "Create",
+      "backButton": "Back",
+      "listItemsLabel": "List of products",
+      "itemReferenceCodeLabel": "Reference"
+    }
+  }
+}

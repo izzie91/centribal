@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "id": "e176",
+      "referenceCode": "0001",
+      "name": "Product 1",
+      "description": "asda",
+      "price": "35.22",
+      "taxPrice": "42.35"
+    },
+    {
+      "id": "34e1",
+      "referenceCode": "003",
+      "name": "Product 3",
+      "description": "Lorem ipsum",
+      "price": "55.60",
+      "taxPrice": "66.55"
+    },
+    {
+      "referenceCode": "005",
+      "name": "Product 5",
+      "description": "Lorem ipsum",
+      "price": "25",
+      "taxPrice": "30.25",
+      "id": "40e5"
+    }
+  ],
+  "orders": [
+    {
+      "identifier": "ZBWODlwq",
+      "total": 140.88,
+      "taxTotal": 169.4,
+      "items": [
+        {
+          "referenceCode": "0001",
+          "count": 4
+        }
+      ],
+      "id": "8ee8"
+    }
+  ]
+}
