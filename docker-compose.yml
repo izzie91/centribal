@@ -1,0 +1,15 @@
+version: "3"
+services:
+  json-server:
+    build:
+      context: ./centribal-api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    command: "npx json-server db.json --port 8000"
+  centribal-app:
+    build:
+      context: ./centribal-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
