@@ -10,7 +10,6 @@ class OrderApiAdapter {
         return resData;
       }
     } catch (error) {
-      //console.error("Error fetching products from API", error);
       toast.error(errorMessage);
       return [];
     }

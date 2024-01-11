@@ -12,7 +12,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children, params }) {
-  console.log(params, "params");
   return (
     <html lang={params.lang}>
       <body className={inter.className}>

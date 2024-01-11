@@ -108,7 +108,6 @@ const useNewOrder = ({ lang, langLabels }) => {
     const selectedCount = selectedProductsArray.find((obj) => obj.referenceCode == referenceCode).count;
     selectedProductsArray = selectedProductsArray.filter((p) => p.referenceCode != referenceCode);
 
-    console.log(selectedCount);
     //change the total values
     currentTotal = currentTotal - selectedCount * parseFloat(p?.price);
     currentTaxTotal = currentTaxTotal - selectedCount * parseFloat(p?.taxPrice);
