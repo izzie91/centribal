@@ -59,14 +59,6 @@ export default function NavigationBar() {
                 </div>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                {/* <button
-                  type="button"
-                  className="relative rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  <span className="absolute -inset-1.5" />
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button> */}
                 <LanguageToggle></LanguageToggle>
               </div>
               <div className="-mr-2 flex items-center sm:hidden">
@@ -89,21 +81,23 @@ export default function NavigationBar() {
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
                 as="a"
-                href="#"
-                className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
+                href={"/" + lang + "/products"}
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
               >
                 {navigation.products}
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href={"/" + lang + "/orders"}
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
               >
                 {navigation.orders}
               </Disclosure.Button>
             </div>
             <div className="border-t border-gray-200 pb-3 pt-4">
-              <div className="flex items-center px-4">toggle</div>
+              <div className="flex items-center px-4">
+                <LanguageToggle></LanguageToggle>
+              </div>
             </div>
           </Disclosure.Panel>
         </>
